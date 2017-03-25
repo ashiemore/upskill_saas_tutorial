@@ -17,6 +17,7 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+/* fonts */
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -28,20 +29,30 @@ h1, h2, h3 {
     border: none;
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav li a, .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav li a:hover {
+/* navbar coloring */
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-nav li a, {
     color: black;
+    &:hover {
+        color: black;
+        opacity: 0.6;
+    }
 }
 
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav li a:hover {
+/* regular css
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-nav li a:hover {
     opacity: 0.6;
-}
+} */
 
+/* homepage style */
 .home-callout {
     margin-top: -20px;
     padding-top: 50px;
     padding-bottom: 100px;
 }
 
+/* background gradient */
 .home-callout, .navbar {
     /* Gradient provided by uigradients.com */
     background: #EECDA3; /* fallback for old browsers */
