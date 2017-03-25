@@ -16,9 +16,11 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 /* fonts */
-h1, h2, h3 {
+h1, h2, h3, p {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
@@ -27,6 +29,10 @@ h1, h2, h3 {
     font-family: 'Lato', sans-serif;
     font-weight: 300; 
     border: none;
+}
+
+.navbar-brand {
+    font-weight: 700;
 }
 
 /* navbar coloring */
@@ -39,11 +45,22 @@ h1, h2, h3 {
     }
 }
 
-/* regular css
-.navbar-default .navbar-brand:hover, 
-.navbar-default .navbar-nav li a:hover {
-    opacity: 0.6;
-} */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-default .navbar-toggle {
+    border: 2px solid black;
+    &:hover, &:focus {
+        background-color: transparent;
+    }
+}
+
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+    border: none;
+    margin: 0px;
+}
 
 /* homepage style */
 .home-callout {
